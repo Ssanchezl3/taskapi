@@ -18,6 +18,14 @@ Opcional:
 - Python 3.10+
 - Docker 
 
+
+## Instalar dependencias:
+
+pip install -r requirements.txt
+
+uvicorn main:app --reload
+
+
 ## Ejecutar localmente (sin Docker)
 1. Crear y activar virtualenv:
    ```bash
@@ -25,6 +33,12 @@ Opcional:
    .venv\Scripts\activate   # Windows
    # source .venv/bin/activate  # macOS / Linux
 
+## Ejecutar con Docker
+docker build -t taskapi:latest .
+docker run -p 8000:8000 taskapi:latest
+http://localhost:8000/tasks
+
 
 
 ## IF YOU GET A RECURSIVE GUARD ERROR IT IS DUE TO MY PYTHON BEING OUTDATED AS SUCH I HAVE TO DOWNGRADE MY FASTAPI TO IT RUNS WITH MY PYTHON
+
