@@ -34,9 +34,9 @@ uvicorn main:app --reload
    # source .venv/bin/activate  # macOS / Linux
 
 ## Ejecutar con Docker
-docker build -t taskapi:latest .
-docker run -p 8000:8000 taskapi:latest
-http://localhost:8000/tasks
+# docker build -t taskapi:latest .
+# docker run -p 8000:8000 taskapi:latest
+# http://localhost:8000/tasks
 
 
 
